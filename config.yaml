@@ -4,7 +4,7 @@ title: Ebeid ElSayed
 disqusShortname: ''
 googleAnalytics: ''
 theme: hugo-sustain
-publishDir: docs
+publishDir: 'https://ebeid.github.io'
 permalinks:
   post: '/:year/:month/:day/:slug'
 params:
