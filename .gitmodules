@@ -1,6 +1,6 @@
 [submodule "ebeid.github.io"]
 	path = ebeid.github.io
 	url = https://github.com/Ebeid/ebeid.github.io.git
-[submodule "themese/hugo-sustain"]
-	path = themese/hugo-sustain
+[submodule "themes/hugo-sustain"]
+	path = themes/hugo-sustain
 	url = https://github.com/nurlansu/hugo-sustain.git

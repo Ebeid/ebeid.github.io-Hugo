@@ -1,33 +1,32 @@
-baseurl = "https://ebeid.github.io/"
+baseurl = "https://example.com/"
 languageCode = "en-US"
-title = "Ebeid ElSayed"
+title = "Chris Turner"
 # Enable comments by entering your Disqus shortname
 disqusShortname = ""
 # Enable Google Analytics by entering your tracking code
 googleAnalytics = ""
 theme = "hugo-sustain"
-publishDir = "ebeid.github.io"
 
 [permalinks]
   post = "/:year/:month/:day/:slug"
 
 [params]
   avatar = "profile.png"
-  author = "Ebeid ElSayed"
-  description = "Ebeid's website"
+  author = "Chris Turner"
+  description = "Describe your website"
 
   # Custom assets can be linked with their paths relative to static/
   custom_css = []
   custom_js  = []
 
 [params.social]
-  Github        = "ebeid"
-  Email         = "ebeidse2@illinois.edu"
-  Twitter       = "ebeidelsayed"
-  LinkedIn      = "ebeidelsayed"
-  Stackoverflow = "users/1779039/ebeid-elsayed"
-#  Medium        = "username"
-#  Telegram      = "username"
+  Github        = "username"
+  Email         = "email@example.com"
+  Twitter       = "username"
+  LinkedIn      = "username"
+  Stackoverflow = "username"
+  Medium        = "username"
+  Telegram      = "username"
 
 ## Main Menu
 [[menu.main]]
@@ -44,4 +43,4 @@ publishDir = "ebeid.github.io"
   name = "resume"
   identifier = "resume"
   weight = 300
-  url = "/pdf/resume.pdf"
+  url = "/resume/"
