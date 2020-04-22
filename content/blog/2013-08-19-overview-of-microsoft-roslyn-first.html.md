@@ -48,11 +48,12 @@ that phase.
     compiler’s semantic analysis
 4.  The emit phase as an API that produces IL byte codes.
 
-[<img src="http://lh3.ggpht.com/-uUa-aB47iz4/Ug1kKYQ00tI/AAAAAAAAB3Y/qWWEFRnS104/image_thumb.png?imgmax=800" title="image" width="608" height="330" alt="image" />](http://lh4.ggpht.com/-G6peFhOXyKY/UhJzZkdvJOI/AAAAAAAAB3Q/qPuGiNoV4hI/s1600-h/image%25255B1%25255D.png)
+![alt text](/img/0010.png "Logo Title Text 1")
 
 ### Rosyln API Layers
 
-[<img src="http://lh5.ggpht.com/-Ug15QHlmw6w/Ug1kLAT_pTI/AAAAAAAAB3A/EXfIINvI-lU/image_thumb%25255B7%25255D.png?imgmax=800" title="image" width="344" height="90" alt="image" />](http://lh6.ggpht.com/-nGfOiFYAeds/Ug1kKiCGrBI/AAAAAAAAB24/RR_eYmi5C4o/s1600-h/image%25255B13%25255D.png)
+![alt text](/img/0011.png "Logo Title Text 1")
+
 
 1.  **Compiler APIs** contains a representation of a single invocation
     of a compiler (including assembly references, compiler options, and

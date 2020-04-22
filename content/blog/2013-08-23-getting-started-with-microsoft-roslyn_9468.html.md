@@ -110,9 +110,9 @@ method to replace the *using System.Collections;* directive with the
 *using System.Collections.Generic;* directive. We then constructed a new
 SyntaxTree using the modified root and print it. You should see the
 modified HelloWorld
-program:[<img src="http://lh6.ggpht.com/-HjpLmfcZ10I/Uhd4BrWs7vI/AAAAAAAAB6I/lWt7hNte_2g/fileFProjectsRoslynDemo4RoslynDemo4binDebugRoslynDemo4.EXE_2013-08-23_09-38-56_thumb%25255B2%25255D.png?imgmax=800" title="fileFProjectsRoslynDemo4RoslynDemo4binDebugRoslynDemo4.EXE_2013-08-23_09-38-56" width="480" height="246" alt="fileFProjectsRoslynDemo4RoslynDemo4binDebugRoslynDemo4.EXE_2013-08-23_09-38-56" />](http://lh4.ggpht.com/-t0gfBkNjX-M/Uhd4BF8o72I/AAAAAAAAB6A/ec4zCJYhKtQ/s1600-h/fileFProjectsRoslynDemo4RoslynDemo4binDebugRoslynDemo4.EXE_2013-08-23_09-38-56%25255B4%25255D.png)
+program:
 
-  
+![alt text](/img/0001.png "Logo Title Text 1")
 
 ### Modifying Syntax Trees using SyntaxRewriters
 
@@ -319,7 +319,7 @@ in all variables declarations to be of type *var*.
 
   
 
-[<img src="http://lh3.ggpht.com/-p5iB0i3EMUs/UhflwaguJmI/AAAAAAAAB6c/_Gq1xyMaja8/fileFProjectsRoslynDemo5RoslynDemo5binDebugRoslynDemo5.EXE_2013-08-23_13-28-40_thumb%25255B2%25255D.png?imgmax=800" title="fileFProjectsRoslynDemo5RoslynDemo5binDebugRoslynDemo5.EXE_2013-08-23_13-28-40" width="566" height="530" alt="fileFProjectsRoslynDemo5RoslynDemo5binDebugRoslynDemo5.EXE_2013-08-23_13-28-40" />](http://lh6.ggpht.com/-L36L9BUDvEk/UhflwCwirMI/AAAAAAAAB6Y/EMlpBv0QsWU/s1600-h/fileFProjectsRoslynDemo5RoslynDemo5binDebugRoslynDemo5.EXE_2013-08-23_13-28-40%25255B4%25255D.png)
+![alt text](/img/0002.png "Logo Title Text 1")
 
   
 
@@ -328,7 +328,7 @@ which have the same kind of change.
 
   
 
-[<img src="http://lh6.ggpht.com/-EK2s-FHDyLI/UhflxWUdMSI/AAAAAAAAB6s/3Iox852VZXM/fileFProjectsRoslynDemo5RoslynDemo5binDebugRoslynDemo5.EXE_2013-08-23_17-33-15_thumb%25255B2%25255D.png?imgmax=800" title="fileFProjectsRoslynDemo5RoslynDemo5binDebugRoslynDemo5.EXE_2013-08-23_17-33-15" width="579" height="530" alt="fileFProjectsRoslynDemo5RoslynDemo5binDebugRoslynDemo5.EXE_2013-08-23_17-33-15" />](http://lh4.ggpht.com/-pNltonsaGUk/Uhflw8LN2eI/AAAAAAAAB6k/fqVyrh7nAvY/s1600-h/fileFProjectsRoslynDemo5RoslynDemo5binDebugRoslynDemo5.EXE_2013-08-23_17-33-15%25255B4%25255D.png)
+![alt text](/img/0003.png "Logo Title Text 1")
 
   
   
