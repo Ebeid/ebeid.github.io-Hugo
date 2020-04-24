@@ -26,7 +26,7 @@ textual representation of the current path condition, a predicate
 (condition) that characterizes an execution path (below, column with
 title Condition) .
 
-<img src="http://lh6.ggpht.com/-svPbigDfUNI/UXlxRNQwHEI/AAAAAAAABKs/yu3AqbW3DKc/ConsoleApplication2%252520-%252520Microsoft%252520Visual%252520Studio_2013-04-25_11-49-50_thumb%25255B2%25255D.jpg?imgmax=800" title="ConsoleApplication2 - Microsoft Visual Studio_2013-04-25_11-49-50" width="539" height="232" alt="ConsoleApplication2 - Microsoft Visual Studio_2013-04-25_11-49-50" />
+![alt text](/img/0016.png "Logo Title Text 1")
 
 Methods **ToRawString** and **GetRawPathConditionString** of the
 **PexSymbolicValue** class return expressions representing symbolic

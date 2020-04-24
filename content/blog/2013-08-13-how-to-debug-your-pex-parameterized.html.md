@@ -24,7 +24,7 @@ In order to debug your parameterized unit tests, do the following:
 -   Go to Tools &gt;&gt; Options &gt;&gt; Pex &gt;&gt; Diagnostic.
 -   Change the *BreakOnStart* option to *True.*
 
-[<img src="http://lh4.ggpht.com/-ayDx3wwvFdk/Ugp-TrSfkdI/AAAAAAAAB2I/y6x2DbrwnE0/Options_2013-08-13_13-01-05_thumb%25255B2%25255D.png?imgmax=800" title="Options_2013-08-13_13-01-05" width="551" height="341" alt="Options_2013-08-13_13-01-05" />](http://lh6.ggpht.com/-F13ijoxl4e8/Ugp-TKg7cNI/AAAAAAAAB2A/vEMmjThJJhk/s1600-h/Options_2013-08-13_13-01-05%25255B4%25255D.png)
+![alt text](/img/0012.png "Logo Title Text 1")
 
 -   Now set a break point at any line of code inside your parameterized
     unit test.
@@ -33,7 +33,7 @@ In order to debug your parameterized unit tests, do the following:
 -   You will see a dialog popping asking to attach a debugger.
 -   Select your current Visual Studio instance.
 
-[<img src="http://lh3.ggpht.com/-piAgugzJwG0/Ugp-U-sVhmI/AAAAAAAAB2Y/WeCEFk_g2ZE/Visual%252520Studio%252520Just-In-Time%252520Debugger_2013-08-13_13-17-20_thumb%25255B1%25255D.png?imgmax=800" title="Visual Studio Just-In-Time Debugger_2013-08-13_13-17-20" width="378" height="417" alt="Visual Studio Just-In-Time Debugger_2013-08-13_13-17-20" />](http://lh3.ggpht.com/-FMRznBkUlpo/Ugp-UekzsCI/AAAAAAAAB2Q/EQF3cgS6lrY/s1600-h/Visual%252520Studio%252520Just-In-Time%252520Debugger_2013-08-13_13-17-20%25255B3%25255D.png)
+![alt text](/img/0013.png "Logo Title Text 1")
 
 -   Once attached, press F5.
 -   Now Visual Studio debugger will jump to your break point in the

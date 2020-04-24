@@ -60,7 +60,8 @@ Edit your code to look like:
 Right click your project in the solution explorer and select Add
 &gt;&gt; New Item &gt;&gt; select Application Configuration File
 &gt;&gt; click Add. Edit the newly created App.config file to look like:
-[<img src="http://lh4.ggpht.com/-Vz88wIo5p30/Ugp0ICflqEI/AAAAAAAAB1w/dL-ogc_PgSo/Z3ToSMTLIB%252520-%252520Microsoft%252520Visual%252520Studio_2013-08-13_12-58-55_thumb%25255B2%25255D.png?imgmax=800" title="Z3ToSMTLIB - Microsoft Visual Studio_2013-08-13_12-58-55" width="562" height="127" alt="Z3ToSMTLIB - Microsoft Visual Studio_2013-08-13_12-58-55" />](http://lh5.ggpht.com/-FZnsrOJ7QM4/Ugp0HznPK6I/AAAAAAAAB1o/-vgKoRVAUAI/s1600-h/Z3ToSMTLIB%252520-%252520Microsoft%252520Visual%252520Studio_2013-08-13_12-58-55%25255B4%25255D.png)Now
+![alt text](/img/0014.png "Logo Title Text 1")
+Now
 you can run your code and pass a file in Z3 native format and get a file
 in SMT-LIB format. This SMT-LIB format opens a lot of possibilities that
 we will explore later.

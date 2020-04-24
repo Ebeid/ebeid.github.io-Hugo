@@ -109,25 +109,14 @@ whole formula evaluates to true.
         }
     }
 
-  
-  
 
 Now let’s run the code above and see the output. The solver says the
 equation system is satisfiable and then gives us the x and y values that
 satisfy.
 
-  
-  
-
-[<img src="http://lh6.ggpht.com/-_oulgO08Rjs/UfbC-_W4NUI/AAAAAAAAB0g/oMAhsSkxYIY/fileFProjectsZ3Demo1Z3Demo1binDebugZ3Demo1.EXE_2013-07-29_08-51-07_thumb%25255B1%25255D.png?imgmax=800" title="fileFProjectsZ3Demo1Z3Demo1binDebugZ3Demo1.EXE_2013-07-29_08-51-07" width="134" height="84" alt="fileFProjectsZ3Demo1Z3Demo1binDebugZ3Demo1.EXE_2013-07-29_08-51-07" />](http://lh5.ggpht.com/-9rk9PdkdmKw/UfbC-RmJw4I/AAAAAAAAB0Y/tKHMbwujGC8/s1600-h/fileFProjectsZ3Demo1Z3Demo1binDebugZ3Demo1.EXE_2013-07-29_08-51-07%25255B3%25255D.png)
-
-  
-  
+![alt text](/img/0015.png "Logo Title Text 1")
 
 #### How it works ?
-
-  
-  
 
 To interact with Z3 through C\#, you need a
 [Context](http://research.microsoft.com/en-us/um/redmond/projects/z3/class_microsoft_1_1_z3_1_1_context.html "Context Class Reference")
@@ -142,17 +131,11 @@ everything in one AND, you pass that the solver through
 [Solver](http://research.microsoft.com/en-us/um/redmond/projects/z3/class_microsoft_1_1_z3_1_1_solver.html "Solver Class Reference").Assert().
 And as you may guessed, you obtain this Solver using Context.MkSolver().
 
-  
-  
-
 Solver.Check() will tell you whether this equation system can be solved
 or not. To get the variables’ assignments that the come up with, get a
 Model object Solver.Model. Then use the Delcs collection to get all
 symbols that have an interpretation in the model. Model.ConstInterp()
 will get the symbol assigned value.
-
-  
-  
 
 In this post we briefly introduced SAT, SMT, and their solvers. Then we
 explored the only SMT solver that written in C\# and had a C\# API. Now

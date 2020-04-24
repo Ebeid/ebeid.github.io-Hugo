@@ -38,7 +38,7 @@ faster.
 
 To start MongoDB, open the command prompt window, and run mongod.exe
 from the bin directory (specify the data path if needed)  
-[<img src="http://lh3.ggpht.com/-m2ZNUOKu82Y/UdyKMjaQRMI/AAAAAAAABvI/ESn0UCWYT8g/CWindowssystem32cmd.exe%252520-%252520mongod.exe%252520%252520--dbpath%252520Cmongodbdata_2013-07-09_16-10-49_thumb.png?imgmax=800" title="CWindowssystem32cmd.exe - mongod.exe  --dbpath Cmongodbdata_2013-07-09_16-10-49" width="565" height="109" alt="CWindowssystem32cmd.exe - mongod.exe --dbpath Cmongodbdata_2013-07-09_16-10-49" />](http://lh4.ggpht.com/-usyjMRcQvaY/UeBs-Hy35mI/AAAAAAAABvE/H8AjQbagqRs/s1600-h/CWindowssystem32cmd.exe%252520-%252520mongod.exe%252520%252520--dbpath%252520Cmongodbdata_2013-07-09_16-10-49.png)The
+![alt text](/img/0017.png "Logo Title Text 1")The
 `waiting for connections` message in the console output indicates that
 the mongod.exe process is running successfully and waiting for
 connections on port 27017  
@@ -47,7 +47,7 @@ connections on port 27017
 
 To connect to the server, open another command prompt window and run
 mongo.exe from the bin directory.  
-[<img src="http://lh5.ggpht.com/-cSLcxLVa1co/UdyKNTQDzhI/AAAAAAAABuE/8EPLDqel4As/CWindowssystem32cmd.exe%252520-%252520mongo_2013-07-09_16-27-37_thumb%25255B1%25255D.png?imgmax=800" title="CWindowssystem32cmd.exe - mongo_2013-07-09_16-27-37" width="493" height="165" alt="CWindowssystem32cmd.exe - mongo_2013-07-09_16-27-37" />](http://lh6.ggpht.com/-yAQeNKOIJ7E/UdyKNGd5VrI/AAAAAAAABt4/HJt-3Qz1R0U/s1600-h/CWindowssystem32cmd.exe%252520-%252520mongo_2013-07-09_16-27-37%25255B3%25255D.png)  
+![alt text](/img/0018.png "Logo Title Text 1")  
 
 #### Run MongoDB as a Windows Service
 
@@ -167,7 +167,7 @@ functions and call them on the mongo shell like:</span>
 > name : "Sam Adams", party : "D" } )</span>  
 > <span style="color: black">Now have three towns in our
 > collection</span>  
-> [<img src="http://lh5.ggpht.com/-HMED6vMJ-xU/Ud8r2fqEPSI/AAAAAAAABvc/wOO7EdlP9wA/Command%252520Prompt%252520-%252520mongo_2013-07-11_14-35-39_thumb%25255B1%25255D.png?imgmax=800" title="Command Prompt - mongo_2013-07-11_14-35-39" width="543" height="208" alt="Command Prompt - mongo_2013-07-11_14-35-39" />](http://lh5.ggpht.com/-xbNkGCPlb9o/Ud8r1wrCQ9I/AAAAAAAABvU/WjQaiWPOKL8/s1600-h/Command%252520Prompt%252520-%252520mongo_2013-07-11_14-35-39%25255B1%25255D.png)
+> ![alt text](/img/0019.png "Logo Title Text 1")
 
 -   To get a specific document, we only need \_id passed to **find()**
     function in type ObjectId(**findOne()** retrieves only one matching

@@ -32,23 +32,23 @@ according to the following concepts:
 
 -   **Column** is a key-value pair.
 
-[<img src="http://lh6.ggpht.com/-p2bQ1oDMq2o/UdSevOL1w6I/AAAAAAAABp8/QJ53e4i7kDc/Cassandra_DataModel_CheatSheet.pdf%252520-%252520Adobe%252520Reader_2013-07-03_15-59-51_thumb.png?imgmax=800" title="Cassandra_DataModel_CheatSheet.pdf - Adobe Reader_2013-07-03_15-59-51" width="104" height="159" alt="Cassandra_DataModel_CheatSheet.pdf - Adobe Reader_2013-07-03_15-59-51" />](http://lh4.ggpht.com/-Nm7Y_Z0Xj7c/UdSeu3ZA_FI/AAAAAAAABp0/CKu7ogaPdQk/s1600-h/Cassandra_DataModel_CheatSheet.pdf%252520-%252520Adobe%252520Reader_2013-07-03_15-59-51%25255B2%25255D.png)
+![alt text](/img/0020.png "Logo Title Text 1")
 
 -   **Column Family** is a set of key-value pairs (columns in
     Cassandra’s terminology). They are sorted by their keys. Families
     are referenced and sorted by row keys.
 
-[<img src="http://lh3.ggpht.com/-pl2jIWhLwSw/UdSev4PPO8I/AAAAAAAABqM/Y_p3gGlpaHI/Cassandra_DataModel_CheatSheet.pdf%252520-%252520Adobe%252520Reader_2013-07-03_16-03-39_thumb%25255B3%25255D.png?imgmax=800" title="Cassandra_DataModel_CheatSheet.pdf - Adobe Reader_2013-07-03_16-03-39" width="343" height="192" alt="Cassandra_DataModel_CheatSheet.pdf - Adobe Reader_2013-07-03_16-03-39" />](http://lh5.ggpht.com/-KQ-fcGadYec/UdSevuHSxFI/AAAAAAAABqE/NZFQ8j55DaY/s1600-h/Cassandra_DataModel_CheatSheet.pdf%252520-%252520Adobe%252520Reader_2013-07-03_16-03-39%25255B5%25255D.png)
+![alt text](/img/0021.png "Logo Title Text 1")
 
 -   **Super Column** the value of a key-value pair can be a sequence of
     key-value pairs as well. In this case, the outer column would be
     called *super column*.
 
-[<img src="http://lh3.ggpht.com/-8li2tYsM-3w/UdSeww5ryXI/AAAAAAAABqc/vhD24M0ZTDA/Cassandra_DataModel_CheatSheet.pdf%252520-%252520Adobe%252520Reader_2013-07-03_16-39-29_thumb.png?imgmax=800" title="Cassandra_DataModel_CheatSheet.pdf - Adobe Reader_2013-07-03_16-39-29" width="244" height="191" alt="Cassandra_DataModel_CheatSheet.pdf - Adobe Reader_2013-07-03_16-39-29" />](http://lh3.ggpht.com/-e67Sbx-MBZI/UdSewXapJpI/AAAAAAAABqU/5Yhu4wezOCw/s1600-h/Cassandra_DataModel_CheatSheet.pdf%252520-%252520Adobe%252520Reader_2013-07-03_16-39-29%25255B2%25255D.png)
+![alt text](/img/0022.png "Logo Title Text 1")
 
 -   Columns and Super Columns can equally be used within Column Families
 
-[<img src="http://lh3.ggpht.com/-KiIm5zkI6Vs/UdSexZH1W1I/AAAAAAAABqs/eORrUHPpta4/Cassandra_DataModel_CheatSheet.pdf%252520-%252520Adobe%252520Reader_2013-07-03_16-44-41_thumb%25255B1%25255D.png?imgmax=800" title="Cassandra_DataModel_CheatSheet.pdf - Adobe Reader_2013-07-03_16-44-41" width="563" height="207" alt="Cassandra_DataModel_CheatSheet.pdf - Adobe Reader_2013-07-03_16-44-41" />](http://lh6.ggpht.com/-cX1ZLQgqBJ8/UdSexIyVfQI/A%0AAAAAAAABqg/_mOTEsywGqo/s1600-h/Cassandra_DataModel_CheatSheet.pdf%252520-%252520Adobe%252520Reader_2013-07-03_16-44-41%25255B3%25255D.png)
+![alt text](/img/0023.png "Logo Title Text 1")
 
 -   Columns or Super Columns are stored ordered by names within their
     Column Families
@@ -88,7 +88,7 @@ by [Maxim Grinev](https://twitter.com/maxgrinev).
     messages coming out. If everything goes fine, it will end up with
     something like this:
 
-[<img src="http://lh4.ggpht.com/-YQZnFRlSZjw/UdRyUioBdnI/AAAAAAAABpQ/mIptHAXzgxc/CWindowssystem32cmd.exe%252520-%252520cassandra%252520%252520-f_2013-07-03_11-18-19_thumb%25255B2%25255D.png?imgmax=800" title="CWindowssystem32cmd.exe - cassandra  -f_2013-07-03_11-18-19" width="568" height="101" alt="CWindowssystem32cmd.exe - cassandra -f_2013-07-03_11-18-19" />](http://lh3.ggpht.com/-UnPiaJX8RoY/UdRyUOwWQBI/AAAAAAAABpM/5XG9a3FWj4k/s1600-h/CWindowssystem32cmd.exe%252520-%252520cassandra%252520%252520-f_2013-07-03_11-18-19%25255B4%25255D.png)
+![alt text](/img/0024.png "Logo Title Text 1")
 
 Now we have a running Cassandra server is expecting incoming connections
 on port 9160.
@@ -97,14 +97,14 @@ Once Cassandra is up and running on your machine, we can connect to the
 running instance using the Cassandra command-line interface, launched by
 running “cassandra-cli.bat”, from the Cassandra “bin” directory.
 
-[<img src="http://lh6.ggpht.com/-uGYNzQQB6kQ/UdRyVQqQD8I/AAAAAAAABpk/eiGHMIIklxE/CWindowssystem32cmd.exe%252520-%252520cassandra-cli.bat_2013-07-03_12-16-36_thumb%25255B1%25255D.png?imgmax=800" title="CWindowssystem32cmd.exe - cassandra-cli.bat_2013-07-03_12-16-36" width="307" height="97" alt="CWindowssystem32cmd.exe - cassandra-cli.bat_2013-07-03_12-16-36" />](http://lh6.ggpht.com/-vurPz2Ai75k/UdRyUwqKVDI/AAAAAAAABpc/q_TMwpoNSpE/s1600-h/CWindowssystem32cmd.exe%252520-%252520cassandra-cli.bat_2013-07-03_12-16-36%25255B3%25255D.png)
+![alt text](/img/0025.png "Logo Title Text 1")
 
 #### Commads
 
 -   **show api version;** to show the current api version.
 -   **describe cluster;** to show a description of the current cluster.
 
-[<img src="http://lh3.ggpht.com/-USxeqWKrlGY/UddSpukxJ2I/AAAAAAAABrE/5djREoFMJTI/CWindowssystem32cmd.exe%252520-%252520cassandra-cli.bat_2013-07-05_12-59-46_thumb%25255B1%25255D.png?imgmax=800" title="CWindowssystem32cmd.exe - cassandra-cli.bat_2013-07-05_12-59-46" width="573" height="156" alt="CWindowssystem32cmd.exe - cassandra-cli.bat_2013-07-05_12-59-46" />](http://lh6.ggpht.com/-E6BbthLOQG0/UddSpGviRLI/AAAAAAAABq8/RJxQT9gGMiM/s1600-h/CWindowssystem32cmd.exe%252520-%252520cassandra-cli.bat_2013-07-05_12-59-46%25255B3%25255D.png)
+![alt text](/img/0026.png "Logo Title Text 1")
 
 -   **create keyspace** *TestKS;* to create a keyspace and it have to be
     a unique name.
@@ -124,30 +124,30 @@ running “cassandra-cli.bat”, from the Cassandra “bin” directory.
         about set command: **type help set;**
 -   `get TestCF[ascii("TestKey")]; to retrieve the value stored in the key TestKey within the column family TestCF`
 
-[<img src="http://lh6.ggpht.com/-0FwfslqY6sA/UddSqaW5V7I/AAAAAAAABrQ/BBYndnX3nMw/CWindowssystem32cmd.exe%252520-%252520cassandra-cli.bat_2013-07-05_11-15-32_thumb%25255B1%25255D.png?imgmax=800" title="CWindowssystem32cmd.exe - cassandra-cli.bat_2013-07-05_11-15-32" width="572" height="170" alt="CWindowssystem32cmd.exe - cassandra-cli.bat_2013-07-05_11-15-32" />](http://lh3.ggpht.com/-Hn5eUsyN27I/UddSp6PwwrI/AAAAAAAABrM/GULnZQPMVF0/s1600-h/CWindowssystem32cmd.exe%252520-%252520cassandra-cli.bat_2013-07-05_11-15-32%25255B3%25255D.png)
+![alt text](/img/0027.png "Logo Title Text 1")
 
 -   **del** *TestCF\[ascii(‘TestKey’)\]\[ascii(‘column2’)\];* rows and
     columns can be deleted by specifying the row key and/or the column
     name  
     with the del (delete) command.
 
-[<img src="http://lh6.ggpht.com/-8Dm_ba0NsI4/UddSrNQyJoI/AAAAAAAABrk/PWgGYTStm1s/CWindowssystem32cmd.exe%252520-%252520cassandra-cli.bat_2013-07-05_15-29-44_thumb%25255B1%25255D.png?imgmax=800" title="CWindowssystem32cmd.exe - cassandra-cli.bat_2013-07-05_15-29-44" width="577" height="126" alt="CWindowssystem32cmd.exe - cassandra-cli.bat_2013-07-05_15-29-44" />](http://lh4.ggpht.com/--hQRoa3rknY/UddSqlWO_gI/AAAAAAAABrY/FYwX-Qf8PIY/s160%0A0-h/CWindowssystem32cmd.exe%252520-%252520cassandra-cli.bat_2013-07-05_15-29-44%25255B3%25255D.png)
+![alt text](/img/0028.png "Logo Title Text 1")
 
 -   **list** *TestCF;* list the data inside a column family
 
-[<img src="http://lh4.ggpht.com/-yLbSOiAhAao/UddSru2O0JI/AAAAAAAABrw/cnqsNsjdwbI/CWindowssystem32cmd.exe%252520-%252520cassandra-cli.bat_2013-07-05_16-05-31_thumb%25255B1%25255D.png?imgmax=800" title="CWindowssystem32cmd.exe - cassandra-cli.bat_2013-07-05_16-05-31" width="585" height="340" alt="CWindowssystem32cmd.exe - cassandra-cli.bat_2013-07-05_16-05-31" />](http://lh3.ggpht.com/-pShPLfMYEdk/UddSrTgOB_I/AAAAAAAABro/wvTp08iV5V8/s1600-h/CWindowssystem32cmd.exe%252520-%252520cassandra-cli.bat_2013-07-05_16-05-31%25255B3%25255D.png)
+![alt text](/img/0029.png "Logo Title Text 1")
 
 -   **drop column family** *TestCF;* removes a column family.
 -   **drop** **keyspace** *TestKS;* removes a key space.
 
-[<img src="http://lh6.ggpht.com/-cltQ_sicXSk/UddSsXgdnLI/AAAAAAAABsE/w9dVZEAlQC4/CWindowssystem32cmd.exe%252520-%252520cassandra-cli.bat_2013-07-05_16-25-05_thumb%25255B1%25255D.png?imgmax=800" title="CWindowssystem32cmd.exe - cassandra-cli.bat_2013-07-05_16-25-05" width="433" height="90" alt="CWindowssystem32cmd.exe - cassandra-cli.bat_2013-07-05_16-25-05" />](http://lh4.ggpht.com/-02x8jN7oqZU/UddSr2JdHKI/AAAAAAAABr4/zfbolqgsGZ8/s1600-h/CWindowssystem32cmd.exe%252520-%252520cassandra-cli.bat_2013-07-05_16-25-05%25255B3%25255D.png)
+![alt text](/img/0030.png "Logo Title Text 1")
 
 ==&gt; You can insert to super columns much like inserting to normal
 columns. They can be read with get, written with set, and deleted with
 del. The super column version of these commands uses an extra \['xxx'\]
 to represent the extra sub-index level.
 
-[<img src="http://lh3.ggpht.com/-scP9SmjNXJU/UddStWKip_I/AAAAAAAABsQ/BoDnyOvIcbY/CWindowssystem32cmd.exe%252520-%252520cassandra-cli.bat_2013-07-05_17-07-44_thumb%25255B3%25255D.png?imgmax=800" title="CWindowssystem32cmd.exe - cassandra-cli.bat_2013-07-05_17-07-44" width="783" height="367" alt="CWindowssystem32cmd.exe - cassandra-cli.bat_2013-07-05_17-07-44" />](http://lh3.ggpht.com/-fHySsJpN8OU/UddSs3kUrNI/AAAAAAAABsM/zG7er1ADQJA/s1600-h/CWindowssystem32cmd.exe%252520-%252520cassandra-cli.bat_2013-07-05_17-07-44%25255B5%25255D.png)
+![alt text](/img/0031.png "Logo Title Text 1")
 
 -   **assume** *TestCF* **comparator as ascii;** it decodes and helps
     display results of get and list requests inside the command-line
@@ -157,7 +157,8 @@ to represent the extra sub-index level.
     column values are byte arrays. After using assume the column and
     value will be displayed rather than the hex code.
 
-[<img src="http://lh4.ggpht.com/-ldlwwZisDns/UddStwvpxpI/AAAAAAAABsg/be4L7iHTN_8/CWindowssystem32cmd.exe%252520-%252520cassandra-cli.bat_2013-07-05_17-29-07_thumb%25255B2%25255D.png?imgmax=800" title="CWindowssystem32cmd.exe - cassandra-cli.bat_2013-07-05_17-29-07" width="657" height="317" alt="CWindowssystem32cmd.exe - cassandra-cli.bat_2013-07-05_17-29-07" />](http://lh6.ggpht.com/-5-u5Iae2Wr8/UddStkmE9oI/AAAAAAAABsY/YZOLw550oUo/s1600-h/CWindowssystem32cmd.exe%252520-%252520cassandra-cli.bat_2013-07-05_17-29-07%25255B4%25255D.png)
+![alt text](/img/0032.png "Logo Title Text 1")
+
 
 -   **Type Enforcement** : Cassandra is designed to store and retrieve
     simple byte arrays but it also have support for [built-in
