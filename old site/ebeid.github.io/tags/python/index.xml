@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Python on Ebeid ElSayed</title>
+    <link>http://localhost:1313/tags/python/</link>
+    <description>Recent content in Python on Ebeid ElSayed</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Sat, 15 Aug 2009 00:31:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/python/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Using Python Scripts with IIS 7</title>
+      <link>http://localhost:1313/blog/2009-08-15-using-python-scripts-with-iis-7.html/</link>
+      <pubDate>Sat, 15 Aug 2009 00:31:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2009-08-15-using-python-scripts-with-iis-7.html/</guid>
+      <description>&lt;p&gt;Here are the steps you should make if you want to use python scripts on&#xA;IIS 7:&lt;/p&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Please make sure Python is installed properly or refer to &lt;a href=&#34;http://ebeid-soliman.blogspot.com/2009/03/python-notes-1.html&#34;&gt;Python&#xA;Notes – 1 :&#xA;Setup&lt;/a&gt;&#xA;for installation steps.&lt;/li&gt;&#xA;&lt;li&gt;Make sure CGI module is installed in IIS 7.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;p&gt;&lt;strong&gt;Control Panel&lt;/strong&gt; -&amp;gt; &lt;strong&gt;Programs&lt;/strong&gt; -&amp;gt; &lt;strong&gt;Program and Features&lt;/strong&gt;&#xA;-&amp;gt; &lt;strong&gt;Turn Windows features on and off&lt;/strong&gt; -&amp;gt; &lt;strong&gt;Internet Information&#xA;Services&lt;/strong&gt; -&amp;gt; &lt;strong&gt;World Wide Web Services&lt;/strong&gt; -&amp;gt; &lt;strong&gt;Application&#xA;Development Features&lt;/strong&gt; -&amp;gt; &lt;strong&gt;CGI module&lt;/strong&gt; (Ensure that it is&#xA;selected).&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python Notes – 10 : Threading</title>
+      <link>http://localhost:1313/blog/2009-03-28-python-notes-10.html/</link>
+      <pubDate>Sat, 28 Mar 2009 07:55:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2009-03-28-python-notes-10.html/</guid>
+      <description>&lt;p&gt;Welcome to our tenth note in the Python learning process. In this note&#xA;we will talk about threading, threads communication and synchronization.&lt;/p&gt;&#xA;&lt;h4 id=&#34;threads-basics&#34;&gt;Threads basics&lt;/h4&gt;&#xA;&lt;p&gt;A running program is called a &amp;ldquo;process&amp;rdquo;. Each process has memory, list&#xA;of open files, stack, program counter, etc…. Normally, a process&#xA;executes statements in a single sequence of control-flow.&lt;/p&gt;&#xA;&lt;p&gt;The following commands create an entirely new process: fork(),system(),&#xA;popen(), etc… This child process runs independently of the parent. Has&#xA;own set of resources. There is minimal sharing of information between&#xA;parent and child.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python Notes – 9 : Serialization</title>
+      <link>http://localhost:1313/blog/2009-03-27-python-notes-9.html/</link>
+      <pubDate>Fri, 27 Mar 2009 01:53:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2009-03-27-python-notes-9.html/</guid>
+      <description>&lt;p&gt;Welcome to our ninth note in our Python learning process. We talked&#xA;previously about files and how to handle it but we talked about writing&#xA;and reading only the primitive data types as integers and strings. We&#xA;also talked about objects and classes. Now, what if we want to write a&#xA;compound data type or a complex object to a file. This note will talk&#xA;about writing objects to files, which is called object serialization.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python Notes – 8 : Object-Oriented Basics</title>
+      <link>http://localhost:1313/blog/2009-03-27-python-notes-8.html/</link>
+      <pubDate>Fri, 27 Mar 2009 01:51:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2009-03-27-python-notes-8.html/</guid>
+      <description>&lt;p&gt;Welcome to our eighth note in our Python learning process. This note&#xA;will talk about object oriented features in Python.&lt;/p&gt;&#xA;&lt;h4 id=&#34;classes-and-objects&#34;&gt;Classes and Objects&lt;/h4&gt;&#xA;&lt;p&gt;A class definition looks like this:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;class Point:&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;    pass&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Class definitions can appear anywhere in a program, but they are usually&#xA;near the beginning (after the import statements). By creating the Point&#xA;class, we created a new type, also called Point. The members of this&#xA;type are called instances of the type or objects. Creating a new&#xA;instance is called instantiation. To instantiate a Point object, we call&#xA;a function named Point:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python Notes – 7 : Files &amp; directories</title>
+      <link>http://localhost:1313/blog/2009-03-23-python-notes-7.html/</link>
+      <pubDate>Mon, 23 Mar 2009 10:12:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2009-03-23-python-notes-7.html/</guid>
+      <description>&lt;p&gt;Welcome to our seventh note in our Python learning process. This note&#xA;will talk specifically about files, directories, and exceptions.&lt;/p&gt;&#xA;&lt;h4 id=&#34;files&#34;&gt;Files&lt;/h4&gt;&#xA;&lt;p&gt;Opening a file creates a file object. Syntax is like that:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&amp;gt;&amp;gt;&amp;gt; f =&#xA;open(&amp;ldquo;test.dat&amp;rdquo;,&amp;ldquo;w&amp;rdquo;)&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&amp;gt;&amp;gt;&amp;gt; print f&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&amp;lt;open file &amp;rsquo;test.dat&amp;rsquo;, mode &amp;lsquo;w&amp;rsquo; at&#xA;fe820&amp;gt;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python Notes – 6 : Tuples &amp; Dictionaries</title>
+      <link>http://localhost:1313/blog/2009-03-23-python-notes-6.html/</link>
+      <pubDate>Mon, 23 Mar 2009 09:06:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2009-03-23-python-notes-6.html/</guid>
+      <description>&lt;p&gt;Welcome to our sixth note in our Python learning process. In this note&#xA;we will talk about tuples and dictionaries.&lt;/p&gt;&#xA;&lt;h4 id=&#34;tuples&#34;&gt;Tuples&lt;/h4&gt;&#xA;&lt;p&gt;Tuples are similar to lists but its elements can&amp;rsquo;t be modified.&#xA;Syntactically, a tuple is a comma-separated list of values:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;gt;&amp;gt;&amp;gt; tuple = &amp;lsquo;a&amp;rsquo;, &amp;lsquo;b&amp;rsquo;, &amp;lsquo;c&amp;rsquo;, &amp;rsquo;d&amp;rsquo;, &amp;rsquo;e&amp;rsquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Although it is not necessary, it is conventional to enclose tuples in&#xA;parentheses:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;gt;&amp;gt;&amp;gt; tuple = (&amp;lsquo;a&amp;rsquo;, &amp;lsquo;b&amp;rsquo;, &amp;lsquo;c&amp;rsquo;, &amp;rsquo;d&amp;rsquo;, &amp;rsquo;e&amp;rsquo;)&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python Notes – 5 : Objects &amp; Values</title>
+      <link>http://localhost:1313/blog/2009-03-23-python-notes-5.html/</link>
+      <pubDate>Mon, 23 Mar 2009 07:49:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2009-03-23-python-notes-5.html/</guid>
+      <description>&lt;p&gt;Welcome to our fifth note in our Python learning process. In this note&#xA;we will talk about one of the core concepts of the Python language&#xA;semantics .&lt;/p&gt;&#xA;&lt;p&gt;Objects and Values&lt;/p&gt;&#xA;&lt;p&gt;An object is something a variable can refer to. Every object has a&#xA;unique identifier, which we can obtain with the id function.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&amp;gt;&amp;gt;&amp;gt; a = &amp;ldquo;banana&amp;rdquo;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&amp;gt;&amp;gt;&amp;gt; b = &amp;ldquo;banana&amp;rdquo;&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python Notes – 3 : Control Statements</title>
+      <link>http://localhost:1313/blog/2009-03-19-python-notes-3.html/</link>
+      <pubDate>Thu, 19 Mar 2009 08:59:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2009-03-19-python-notes-3.html/</guid>
+      <description>&lt;p&gt;Welcome to our third note in our Python learning process. In this note&#xA;we will talk about conditional statements, iteration and keyboard input.&lt;/p&gt;&#xA;&lt;h4 id=&#34;conditional-statements&#34;&gt;Conditional Statements&lt;/h4&gt;&#xA;&lt;p&gt;The normal flow of statements execution is sequential where the&#xA;interpreter executes the statements in the same sequence that it appears&#xA;in the script. If your program logic requires a different flow than the&#xA;that, you should use conditional statements. The syntax looks like:&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&lt;!-- raw HTML omitted --&gt;if x%2 == 0:&lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python Notes – 2 : Variables, Statements, Expressions, Operators, and Functions</title>
+      <link>http://localhost:1313/blog/2009-03-18-python-notes-2.html/</link>
+      <pubDate>Wed, 18 Mar 2009 15:25:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2009-03-18-python-notes-2.html/</guid>
+      <description>&lt;p&gt;Welcome to our second note in our Python learning process. In this note&#xA;we will talk about variables, statements, expressions, operators,&#xA;comments, and functions. These are the very basic building blocks of you&#xA;programs whatever its final size&lt;/p&gt;&#xA;&lt;h4 id=&#34;variables&#34;&gt;Variables&lt;/h4&gt;&#xA;&lt;p&gt;The assignment statement creates new variables and gives them values&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;gt;&amp;gt;&amp;gt; message = &amp;ldquo;What&amp;rsquo;s up, Doc?&amp;rdquo;&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;gt;&amp;gt;&amp;gt; n = 17&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;&amp;gt;&amp;gt;&amp;gt; pi = 3.14159&lt;/p&gt;&#xA;&lt;/blockquote&gt;&#xA;&lt;p&gt;Python is a dynamically typed language. Which means that variables&#39;&#xA;types don&amp;rsquo;t have to be defined before the variables use. The python&#xA;interpreter figure out what type a variable is when you first assign it&#xA;a value.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Python Notes – 1 : Setup</title>
+      <link>http://localhost:1313/blog/2009-03-18-python-notes-1.html/</link>
+      <pubDate>Wed, 18 Mar 2009 08:55:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2009-03-18-python-notes-1.html/</guid>
+      <description>&lt;p&gt;I write this notes about Python during my learning process of it. I&amp;rsquo;m&#xA;not an expert in Python. I&amp;rsquo;m just writing this notes while I learn&#xA;Python aiming to help others who are learning it too. Never hesitate to&#xA;comment on anything you want.&lt;/p&gt;&#xA;&lt;h4 id=&#34;origins-of-python&#34;&gt;Origins of Python&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Developed by Guido van Rossum.&lt;/li&gt;&#xA;&lt;li&gt;Derived from ABC, a teaching language that was developed in 1980s.&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;why-pyhton-&#34;&gt;Why Pyhton ?&lt;/h4&gt;&#xA;&lt;ul&gt;&#xA;&lt;li&gt;Python code is pretty simple, compact and easy to learn.&lt;/li&gt;&#xA;&lt;li&gt;Code simplicity let you focus on the core program functionality.&lt;/li&gt;&#xA;&lt;li&gt;Suitable for programming languages introductory courses.&lt;/li&gt;&#xA;&lt;li&gt;Provides a balance between the practical and the conceptual. You&#xA;start writing after the first tutorial; and if you want to go&#xA;further in advanced topics you will find a large library of modules&#xA;that can be used to do all sorts of tasks ranging from&#xA;web-programming to graphics.&lt;/li&gt;&#xA;&lt;li&gt;Python borrows features from both functional programming languages&#xA;and object-oriented programming languages, which enables it to serve&#xA;as an excellent foundation for introducing important computer&#xA;science concepts.&lt;/li&gt;&#xA;&lt;li&gt;Python allow you to see higher level of success and a lower level of&#xA;frustration :)&lt;/li&gt;&#xA;&lt;/ul&gt;&#xA;&lt;h4 id=&#34;how-to-setup-python-&#34;&gt;How to setup Python ?&lt;/h4&gt;&#xA;&lt;p&gt;Python is free downloadable from many source, and it have also many IDEs&#xA;and editors. Aiming to start coding quickly without wasting time in IDE&#xA;exploration, setup, configuration problems; we will use just the&#xA;&lt;a href=&#34;http://downloads.activestate.com/ActivePython/windows/2.6/ActivePython-2.6.1.1-win32-x86.msi&#34;&gt;ActivePython.&lt;/a&gt;&#xA;Let&amp;rsquo;s see how to do that:&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

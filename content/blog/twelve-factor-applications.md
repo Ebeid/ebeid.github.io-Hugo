@@ -1,4 +1,5 @@
 ---
+title:  "Twelve-Factor Applications"
 categories: 
   - concepts
 date: "2019-10-04"
@@ -6,7 +7,7 @@ description: ""
 highlight: "true"
 tags:
   - cloud
-title:  "Twelve-Factor Applications"
+
 ---
 
 This post is just my notes about [Twelve-Factor Applications](https://www.12factor.net/). You can consider it my extended version of the original website.

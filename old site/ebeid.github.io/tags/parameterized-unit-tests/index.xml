@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Parameterized Unit Tests on Ebeid ElSayed</title>
+    <link>http://localhost:1313/tags/parameterized-unit-tests/</link>
+    <description>Recent content in Parameterized Unit Tests on Ebeid ElSayed</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Thu, 02 May 2013 16:08:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/parameterized-unit-tests/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Parameterized Test Patterns using Microsoft Pex</title>
+      <link>http://localhost:1313/blog/2013-05-02-parameterized-test-patterns-using.html/</link>
+      <pubDate>Thu, 02 May 2013 16:08:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2013-05-02-parameterized-test-patterns-using.html/</guid>
+      <description>&lt;p&gt;We talked before about the difference between unit tests and&#xA;parameterized unit tests. In this post we will talk about common&#xA;patterns for writing good parameterized unit tests. Keep in mind that we&#xA;will use these tests with Microsoft Pex (as an automatic test input&#xA;generation tool) to get test inputs that trigger all the possible&#xA;scenarios of the code-under-test.&lt;/p&gt;&#xA;&lt;blockquote&gt;&#xA;&lt;p&gt;Before anything, let’s clarify what are the questions we want to&#xA;answer using the parameterized unit tests. There are  two core&#xA;questions:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Getting started with Microsoft Pex</title>
+      <link>http://localhost:1313/blog/2013-04-24-getting-started-with-microsoft-pex.html/</link>
+      <pubDate>Wed, 24 Apr 2013 03:06:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2013-04-24-getting-started-with-microsoft-pex.html/</guid>
+      <description>&lt;p&gt;&lt;a href=&#34;http://research.microsoft.com/en-us/projects/pex/&#34;&gt;Microsoft Pex&lt;/a&gt; is a&#xA;&lt;a href=&#34;http://research.microsoft.com/pubs/81193/fulltext.pdf&#34;&gt;white box test generation for&#xA;.NET&lt;/a&gt; that came&#xA;out of Microsoft Research and have been successfully integrated into&#xA;Visual Studio 2010. It have been a result of collaborative work between&#xA;Microsoft Research and the &lt;a href=&#34;https://sites.google.com/site/asergrp/&#34;&gt;Automated Software Engineering Research&#xA;Group&lt;/a&gt; at &lt;a href=&#34;http://www.ncsu.edu/&#34;&gt;North Carolina State&#xA;University&lt;/a&gt; led by  &lt;a href=&#34;http://www.csc.ncsu.edu/faculty/xie/&#34;&gt;Dr. Tao&#xA;Xie&lt;/a&gt;.&lt;/p&gt;&#xA;&lt;p&gt;You can download and install Microsoft Pex for Visual Studio 2010 from&#xA;&lt;a href=&#34;http://research.microsoft.com/en-us/projects/pex/downloads.aspx&#34;&gt;here&lt;/a&gt;.&#xA;We have talked in a previous&#xA;&lt;a href=&#34;http://ebeid-soliman.blogspot.com/2013/04/unit-tests-vs-parameterized-unit-tests.html&#34;&gt;post&lt;/a&gt;&#xA;about parameterized unit tests and the possibilities it brings. In this&#xA;post and the following we will explore Microsoft Pex and how it can help&#xA;you in understanding the input/output behavior of your code, finding&#xA;inputs that cause the code-under-test to crash, and exploring&#xA;parameterized unit tests to check whether your code implements the&#xA;desired functionality for all inputs.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Unit Tests vs Parametrized Unit Tests</title>
+      <link>http://localhost:1313/blog/2013-04-22-unit-tests-vs-parameterized-unit-tests.html/</link>
+      <pubDate>Mon, 22 Apr 2013 17:17:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2013-04-22-unit-tests-vs-parameterized-unit-tests.html/</guid>
+      <description>&lt;h3 id=&#34;unit-tests&#34;&gt;Unit Tests&lt;/h3&gt;&#xA;&lt;p&gt;Using the conventions of NUnit unit tests as test methods contained in&#xA;test classes. A parameterless method decorated with a custom attribute&#xA;like [TestMethod] is a test method. Usually, each unit test explores a&#xA;particular aspect of the behavior of the class-under-test.&lt;/p&gt;&#xA;&lt;p&gt;Here is a unit test written in C# that adds an element to a .NET&#xA;ArrayList instance. The test first creates a new array list, where the&#xA;parameter to the constructor is the initial capacity, then adds a new&#xA;object to the array list, and finally checks that the addition was&#xA;correctly performed by verifying that a subsequent index lookup&#xA;operation returns the new object.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Statistics on Ebeid ElSayed</title>
+    <link>http://localhost:1313/tags/statistics/</link>
+    <description>Recent content in Statistics on Ebeid ElSayed</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 11 Jan 2013 13:53:00 -0600</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/statistics/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Introduction to R – Removing missing values</title>
+      <link>http://localhost:1313/blog/2013-01-11-introduction-to-r-removing-missing.html/</link>
+      <pubDate>Fri, 11 Jan 2013 13:53:00 -0600</pubDate>
+      <guid>http://localhost:1313/blog/2013-01-11-introduction-to-r-removing-missing.html/</guid>
+      <description>&lt;p&gt;A common task in preparing you data is to remove missing&#xA;values(NAs). One way to do that is to retrieve a vector of the missing&#xA;values in your data, and then filter them out from your structure.&lt;br&gt;&#xA;&lt;a href=&#34;http://lh4.ggpht.com/-fqvd8zYqRaM/UO3Ko7OHciI/AAAAAAAAAvo/2LmL5CKpUyU/s1600-h/RGui%252520%25252864-bit%252529_2013-01-09_13-17-45%25255B3%25255D.jpg&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/a&gt;&lt;br&gt;&#xA;If you want to filter out the missing values from more than one vector ,&#xA;you can use complete.cases() to get the indices that contains good data&#xA;in both vectors.&lt;br&gt;&#xA;&lt;a href=&#34;http://lh3.ggpht.com/-8MfkwQHNFGQ/UO3KqEfBS1I/AAAAAAAAAv4/2EMSYTGQsYg/s1600-h/RGui%252520%25252864-bit%252529_2013-01-09_13-25-29%25255B3%25255D.jpg&#34;&gt;&lt;!-- raw HTML omitted --&gt;&lt;/a&gt;&lt;br&gt;&#xA;Here good will contain TRUE only for indices that hold good data in both&#xA;vectors; FALSE otherwise. complete.cases() works with data frames also.&#xA;In that case it removes any row that contains NA in any column.The&#xA;returned data frame will not contain any NAs.&lt;br&gt;&#xA;Stay tuned for more R notes.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Introduction to R – Getting Started</title>
+      <link>http://localhost:1313/blog/2013-01-09-introduction-to-r-getting-started.html/</link>
+      <pubDate>Wed, 09 Jan 2013 10:19:00 -0600</pubDate>
+      <guid>http://localhost:1313/blog/2013-01-09-introduction-to-r-getting-started.html/</guid>
+      <description>&lt;p&gt;&lt;!-- raw HTML omitted --&gt;&lt;strong&gt;R&lt;/strong&gt; is an open source&#xA;programming language and software environment for statistical computing&#xA;and graphics. The R language is widely used among statisticians for&#xA;developing statistical software and data analysis. R was created by&#xA;&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://www.facebook.com/pages/w/103371346383347&#34;&gt;&lt;!-- raw HTML omitted --&gt;Ross&#xA;Ihaka&lt;!-- raw HTML omitted --&gt;&lt;/a&gt;&lt;!-- raw HTML omitted --&gt; and &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://www.facebook.com/pages/w/126921034017343&#34;&gt;&lt;!-- raw HTML omitted --&gt;Robert&#xA;Gentleman&lt;!-- raw HTML omitted --&gt;&lt;/a&gt;&lt;!-- raw HTML omitted --&gt; at the &lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;https://www.facebook.com/pages/w/105560002810339&#34;&gt;&lt;!-- raw HTML omitted --&gt;University of&#xA;Auckland&lt;!-- raw HTML omitted --&gt;&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;, New Zealand, and now, R is developed by&#xA;the &lt;em&gt;R Development Core Team&lt;/em&gt;. &lt;!-- raw HTML omitted --&gt;&lt;br&gt;&#xA;&lt;!-- raw HTML omitted --&gt;To download R and install it on your&#xA;computer, you can get it at the Comprehensive R Archive Network&#xA;(&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://cran.r-project.org/&#34;&gt;&lt;!-- raw HTML omitted --&gt;http://cran.r-project.org&lt;!-- raw HTML omitted --&gt;&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;). One option that you may want to explore&#xA;is RStudio (&lt;!-- raw HTML omitted --&gt;&lt;a href=&#34;http://rstudio.org/&#34;&gt;&lt;!-- raw HTML omitted --&gt;http://rstudio.org&lt;!-- raw HTML omitted --&gt;&lt;/a&gt;&lt;!-- raw HTML omitted --&gt;) which is a very nice front-end to R and&#xA;works on all platforms.&lt;br&gt;&#xA;The R System is divided into 2 conceptual parts: &lt;!-- raw HTML omitted --&gt;&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Basic statistics using Microsoft Excel</title>
+      <link>http://localhost:1313/blog/2013-01-08-basic-statistics-using-microsoft-excel.html/</link>
+      <pubDate>Tue, 08 Jan 2013 13:01:00 -0600</pubDate>
+      <guid>http://localhost:1313/blog/2013-01-08-basic-statistics-using-microsoft-excel.html/</guid>
+      <description>&lt;p&gt;Microsoft Excel is a powerful software that have been used my end users&#xA;and professionals for many years for various purposes. In this post we&#xA;going to introduce basic statistical features of Excel. This post is&#xA;using Microsoft Excel 2013, but it is easy to map it to your Excel&#xA;version.&lt;/p&gt;&#xA;&lt;h3 id=&#34;basic-formulas&#34;&gt;&lt;strong&gt;Basic Formulas&lt;/strong&gt;&lt;/h3&gt;&#xA;&lt;p&gt;Computations in Excel are carried out using formulas. A formula is a&#xA;mathematical expression that is used to calculate a value. In Excel, a&#xA;formula is entered into the active cell by typing an expression. In&#xA;certain situations, Excel will automatically insert a formula for you.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Microsoft Roslyn on Ebeid ElSayed</title>
+    <link>http://localhost:1313/tags/microsoft-roslyn/</link>
+    <description>Recent content in Microsoft Roslyn on Ebeid ElSayed</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Fri, 23 Aug 2013 17:56:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/microsoft-roslyn/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Syntax Modification using Microsoft Roslyn</title>
+      <link>http://localhost:1313/blog/2013-08-23-getting-started-with-microsoft-roslyn_9468.html/</link>
+      <pubDate>Fri, 23 Aug 2013 17:56:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2013-08-23-getting-started-with-microsoft-roslyn_9468.html/</guid>
+      <description>&lt;p&gt;In the previous two posts we just used the analysis capabilities of&#xA;Microsoft&#xA;&lt;a href=&#34;http://msdn.microsoft.com/en-us/vstudio/roslyn.aspx&#34; title=&#34;Microsoft® “Roslyn” CTP&#34;&gt;Roslyn&lt;/a&gt;.&#xA;In other words, we only get information about the code under inspection,&#xA;we never changed it. In this post we going to change the code through&#xA;Roslyn.&lt;/p&gt;&#xA;&lt;p&gt;Before we start we need to highlight that data structures that represent&#xA;code under inspection in Roslyn APIs are immutable. This means that it&#xA;cannot be changed after they are created (in order to safely share them&#xA;between tools). This applies to syntax trees, compilations, symbols,&#xA;semantic models, and every other data structure in the Roslyn API.&#xA;Instead of modification, new objects are created based on specified&#xA;differences to the old ones.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Semantic Analysis using Microsoft Roslyn</title>
+      <link>http://localhost:1313/blog/2013-08-22-getting-started-with-microsoft-roslyn_22.html/</link>
+      <pubDate>Thu, 22 Aug 2013 13:11:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2013-08-22-getting-started-with-microsoft-roslyn_22.html/</guid>
+      <description>&lt;p&gt;In a previous&#xA;&lt;a href=&#34;http://ebeid-soliman.blogspot.com/2013/08/getting-started-with-microsoft-roslyn.html&#34; title=&#34;Getting Started with Microsoft Rosyln Syntax Analysis&#34;&gt;post&lt;/a&gt;&#xA;we talked about using Microsoft Rosyln Syntax API to deal with syntax&#xA;text in terms of SyntaxTrees and SyntaxNodes. But as we we all know, a&#xA;single source code or code snippet can’t make a useful program. 99% of&#xA;the time we end up with many source code files that depend on so many&#xA;externals: assembly references, namespace imports, or other code files.&#xA;The meaning (semantic) of SyntaxNodes depend heavily on these externals&#xA;and may change due changes in these externals even if its enclosing&#xA;source code file have not been changed.&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Syntax Analysis using Microsoft Roslyn</title>
+      <link>http://localhost:1313/blog/2013-08-20-getting-started-with-microsoft-roslyn/</link>
+      <pubDate>Tue, 20 Aug 2013 15:49:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2013-08-20-getting-started-with-microsoft-roslyn/</guid>
+      <description>&lt;p&gt;In a previous&#xA;&lt;a href=&#34;http://ebeid-soliman.blogspot.com/2013/08/overview-of-microsoft-roslyn-first.html&#34;&gt;post&lt;/a&gt;&#xA;we talked about Microsoft&#xA;&lt;a href=&#34;http://msdn.microsoft.com/en-us/vstudio/roslyn.aspx&#34; title=&#34;Microsoft® “Roslyn” CTP&#34;&gt;Roslyn&lt;/a&gt;.&#xA;In this post will get our hands dirty with Roslyn syntax analysis in&#xA;order to develop our first code-focused program. We will see how the&#xA;SyntaxTree of HelloWorld program look like and how we can traverse and&#xA;query it.&lt;/p&gt;&#xA;&lt;p&gt;The &lt;strong&gt;Syntax API&lt;/strong&gt; exposes the syntax trees the compilers use to&#xA;understand Visual Basic and C# programs. They are produced by the same&#xA;parser that runs when a project is built or a developer hits F5. The&#xA;four primary building blocks of syntax trees are:&lt;/p&gt;</description>
+    </item>
+    <item>
+      <title>Overview of Microsoft Roslyn – The first compiler-as-service product</title>
+      <link>http://localhost:1313/blog/2013-08-19-overview-of-microsoft-roslyn-first.html/</link>
+      <pubDate>Mon, 19 Aug 2013 21:00:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2013-08-19-overview-of-microsoft-roslyn-first.html/</guid>
+      <description>&lt;h3 id=&#34;introduction&#34;&gt;Introduction&lt;/h3&gt;&#xA;&lt;p&gt;From developer perspective, compilers are black boxes &amp;ndash; source code&#xA;goes in one end, magic happens in the middle, and object files or&#xA;assemblies come out the other end. During their job, compilers build up&#xA;a deep understanding of our code. For decades this valuable information&#xA;was unreachable.&lt;/p&gt;&#xA;&lt;p&gt;The &lt;a href=&#34;http://msdn.microsoft.com/en-us/vstudio/roslyn.aspx&#34; title=&#34;Microsoft® “Roslyn” CTP&#34;&gt;Roslyn&#xA;project&lt;/a&gt;&#xA;aims to open compilers for developers and offer it as services. Through&#xA;Roslyn, compilers become services with APIs that can be used for code&#xA;related tasks in your tools and applications.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

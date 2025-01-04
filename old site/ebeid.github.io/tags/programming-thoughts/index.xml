@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Programming Thoughts on Ebeid ElSayed</title>
+    <link>http://localhost:1313/tags/programming-thoughts/</link>
+    <description>Recent content in Programming Thoughts on Ebeid ElSayed</description>
+    <generator>Hugo</generator>
+    <language>en-US</language>
+    <lastBuildDate>Wed, 26 Aug 2009 00:32:00 -0500</lastBuildDate>
+    <atom:link href="http://localhost:1313/tags/programming-thoughts/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>Wisdom of Experts: Programming in vs. Programming into a language</title>
+      <link>http://localhost:1313/blog/2009-08-26-wisdom-of-experts-programming-in-vs.html/</link>
+      <pubDate>Wed, 26 Aug 2009 00:32:00 -0500</pubDate>
+      <guid>http://localhost:1313/blog/2009-08-26-wisdom-of-experts-programming-in-vs.html/</guid>
+      <description>&lt;p&gt;David Gries (1981)  pointed out that “your programming tools don’t have&#xA;to determine how you think about programming”. He also made a&#xA;distinction between programming &lt;em&gt;&lt;strong&gt;in&lt;/strong&gt;&lt;/em&gt; a language vs. programming&#xA;&lt;em&gt;&lt;strong&gt;into&lt;/strong&gt;&lt;/em&gt; a language.&lt;/p&gt;&#xA;&lt;p&gt;Programmers who program “in” a language limit their thoughts to&#xA;constructs that the language directly supports. If the language tools&#xA;are primitive, the programmers thoughts will be also be primitive.&lt;/p&gt;&#xA;&lt;p&gt;Programmers who program “into” a language, first decide what thoughts&#xA;they want to express, and then they determine how to express thoughts&#xA;using the tools provided by their specific language.&lt;/p&gt;</description>
+    </item>
+  </channel>
+</rss>

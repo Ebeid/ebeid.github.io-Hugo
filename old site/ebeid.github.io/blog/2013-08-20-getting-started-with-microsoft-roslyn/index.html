@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head><script src="/livereload.js?mindelay=10&amp;v=2&amp;port=1313&amp;path=livereload" data-no-instant defer></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Ebeid ElSayed" />
+    <meta name="description" content="Ebeid&#39;s website">
+    <link rel="shortcut icon" type="image/x-icon" href="http://localhost:1313/img/favicon.ico">
+    <title>Syntax Analysis using Microsoft Roslyn</title>
+    <meta name="generator" content="Hugo 0.138.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="http://localhost:1313/css/main.css" />
+    <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:200,400,200bold,400old" />
+    
+    <!--[if lt IE 9]>
+			<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+			<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+		<![endif]-->
+
+    
+  </head>
+
+  <body>
+    <div id="wrap">
+
+      
+      <nav class="navbar navbar-default">
+  <div class="container">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="http://localhost:1313/"><i class="fa fa-home"></i></a>
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+    </div>
+    <div class="navbar-collapse collapse" id="navbar">
+      <ul class="nav navbar-nav navbar-right">
+      
+        
+        <li><a href="/blog/">BLOG</a></li>
+        
+        <li><a href="/projects/">PROJECTS</a></li>
+        
+        <li><a href="/pdf/resume.pdf">RESUME</a></li>
+        
+      
+      </ul>
+    </div>
+  </div>
+</nav>
+
+      
+      <div class="container">
+        <div class="blog-post">
+          <h3>
+            <strong><a href="http://localhost:1313/blog/2013-08-20-getting-started-with-microsoft-roslyn/">Syntax Analysis using Microsoft Roslyn</a></strong>
+          </h3>
+        </div>
+        <div class="blog-title">
+          <h4>
+          August 20, 2013
+            &nbsp;&nbsp;
+            
+            <span class="label label-success">Microsoft Roslyn</span>
+            
+            <span class="label label-success">Syntax Trees</span>
+            
+            <span class="label label-success">Compilers</span>
+            
+          </h4>
+        </div>
+        <div class="panel panel-default">
+          <div class="panel-body">
+            <div class="blogpost">
+              <p>In a previous
+<a href="http://ebeid-soliman.blogspot.com/2013/08/overview-of-microsoft-roslyn-first.html">post</a>
+we talked about Microsoft
+<a href="http://msdn.microsoft.com/en-us/vstudio/roslyn.aspx" title="Microsoft® “Roslyn” CTP">Roslyn</a>.
+In this post will get our hands dirty with Roslyn syntax analysis in
+order to develop our first code-focused program. We will see how the
+SyntaxTree of HelloWorld program look like and how we can traverse and
+query it.</p>
+<p>The <strong>Syntax API</strong> exposes the syntax trees the compilers use to
+understand Visual Basic and C# programs. They are produced by the same
+parser that runs when a project is built or a developer hits F5. The
+four primary building blocks of syntax trees are:</p>
+<ul>
+<li>The <strong>SyntaxTree</strong> class, an instance of which represents an entire
+parse tree.</li>
+<li>The <strong>SyntaxNode</strong> class, instances of which represent syntactic
+constructs such as declarations, statements, clauses, and
+expressions.</li>
+<li>The <strong>SyntaxToken</strong> structure, which represents an individual
+keyword, identifier, operator, or punctuation.</li>
+<li>And lastly the <strong>SyntaxTrivia</strong> structure, which represents
+syntactically insignificant bits of information such as the
+whitespace between tokens, preprocessor directives, and comments.</li>
+</ul>
+<h3 id="traversing-syntax-trees">Traversing Syntax Trees</h3>
+<p>First, download Microsoft Roslyn CTP from
+<a href="http://www.microsoft.com/en-us/download/details.aspx?id=34685" title="Microsoft Download Center">here</a>.
+and Install it.You will need <a href="http://go.microsoft.com/fwlink/?linkid=255983">Visual Studio
+2012</a> and <a href="http://go.microsoft.com/?linkid=9810482">Visual Studio
+2012 SDK</a> in order to install
+Roslyn.</p>
+<p>Now open your Visual Studio 2012 and create a new Console Application
+project. Add the following to your project references</p>
+<p><img src="/img/0007.png" alt="alt text" title="Logo Title Text 1"></p>
+<p>Now edit your code to look like:</p>
+<pre tabindex="0"><code>using System;
+using System;
+using Roslyn.Compilers;
+using Roslyn.Compilers.CSharp;
+
+namespace RoslynDemo1
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            SyntaxTree tree = SyntaxTree.ParseText(
+                @&#34;using System;
+ 
+                namespace HelloWorld
+                {
+                    class Program
+                    {
+                        static void Main(string[] args)
+                        {
+                            Console.WriteLine(&#34;&#34;Hello, World!&#34;&#34;);
+                        }
+                    }
+                }&#34;);
+
+            foreach (SyntaxNode node in tree.GetRoot().ChildNodesAndTokens())
+                PrintSyntaxTree(node);
+
+            Console.ReadLine();
+        }
+        static void PrintSyntaxTree(SyntaxNode node)
+        {
+            if (node != null)
+            {
+                Console.WriteLine(node.Kind + &#34; | &#34; + node.ToString());
+                foreach (SyntaxNode child in node.ChildNodes())
+                    PrintSyntaxTree(child);
+            }
+        }
+    }
+}
+</code></pre><p>Now, run our program. You should see an output similar to the following:</p>
+<p><img src="/img/0008.png" alt="alt text" title="Logo Title Text 1"></p>
+<p>Now let&rsquo;s explain what we already did. First, we included the needed
+namespaces. The common Syntax APIs are found in the Roslyn.Compilers and
+the Roslyn.Compilers.Common namespace, while the language specific
+Syntax APIs are found in Roslyn.Compilers.CSharp and
+Roslyn.Compilers.VisualBasic.</p>
+<p>Second, we tried to get a syntax tree corresponding to our HelloWorld
+program using the <em>SyntaxTree.ParseText</em> function, which produces a
+syntax tree by parsing the passed source code.</p>
+<p>Third, in order to traverse the syntax tree we get its root, then get
+its child nodes. Then loop on these child nodes and their children
+recursively to print its kind and the string representation. C# node
+kind is on of the kinds in enum <em>Roslyn.Compilers.CSharp.SymbolKind</em>.</p>
+<p>Inside the PrintSyntaxTree method, by playing in the order of node
+printing and the recursive call, you can apply your tree traversal
+logic. You can also inspect specific elements of the tree:</p>
+<pre tabindex="0"><code>var root = (CompilationUnitSyntax)tree.GetRoot(); 
+var helloWorldDeclaration = (NamespaceDeclarationSyntax)root.Members[0];
+var programDeclaration = (TypeDeclarationSyntax)helloWorldDeclaration.Members[0];
+var mainDeclaration = (MethodDeclarationSyntax)programDeclaration.Members[0];
+var argsParameter = mainDeclaration.ParameterList.Parameters[0];
+Console.WriteLine(argsParameter.ToString() );
+</code></pre><h3 id="query-methods">Query Methods</h3>
+<p>In addition to traversing syntax trees you can also explore the syntax
+tree using the query methods defined on <em>SyntaxNode</em>. These methods are
+similar to XPath. You can also use these methods with LINQ to quickly
+find things in a tree. For example, the following statements uses a LINQ
+expression and the <strong>DescendantNodes</strong> method to locate the same
+parameter as in the previous example:</p>
+<pre tabindex="0"><code>            var firstParameters = from methodDeclaration in root.DescendantNodes()
+                                                    .OfType()
+                                  where methodDeclaration.Identifier.ValueText == &#34;Main&#34;
+                                  select methodDeclaration.ParameterList.Parameters.First();
+
+            var argsParameter2 = firstParameters.Single();
+            Console.WriteLine(argsParameter2.ToString());
+</code></pre><h3 id="syntaxwalkers">SyntaxWalkers</h3>
+<p>If you want to find all nodes of a specific type in a syntax tree, for
+example, every property declaration in a file, you can do that by
+extending the <em>SyntaxWalker</em> class and overriding the
+<em>VisitPropertyDeclaration</em> method, you can process every property
+declaration in a syntax tree without knowing its structure beforehand.</p>
+<p>Now let&rsquo;s implement, as an example, a SyntaxWalker that examines the
+entire syntax tree and collects any using directives it find which
+aren&rsquo;t importing a System namespace.</p>
+<p>Create a new C# Console application and edit it to look like:</p>
+<pre tabindex="0"><code>using System;
+using Roslyn.Compilers;
+using Roslyn.Compilers.CSharp;
+
+namespace RoslynDemo2
+{
+    class Program
+    {
+        static void Main(string[] args)
+        {
+            SyntaxTree tree = SyntaxTree.ParseText(
+@&#34;using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Roslyn.Compilers;
+using Roslyn.Compilers.CSharp;
+ 
+namespace TopLevel
+{
+    using Microsoft;
+    using System.ComponentModel;
+ 
+    namespace Child1
+    {
+        using Microsoft.Win32;
+        using System.Runtime.InteropServices;
+ 
+        class Foo { }
+    }
+ 
+    namespace Child2
+    {
+        using System.CodeDom;
+        using Microsoft.CSharp;
+ 
+        class Bar { }
+    }
+}&#34;);
+
+            var root = (CompilationUnitSyntax)tree.GetRoot();
+        }
+    }
+}
+</code></pre><p>As you noticed, this source text contains <strong>using</strong> directives scattered
+across four different locations: the file-level, in the top-level
+namespace, and in the two nested namespaces.</p>
+<p>Now, add a new class to your project and edit it to look like the next
+code. Basically we inherit from the <em>SyntaxWalker</em> class, and over the
+<em>VisitUsingDirective</em> method. This method is called by <em>Visit</em> method,
+which recursively visits a node and each of its children.
+VisitUsingDirective method is called for using directives only, inside
+it we collect the namespaces that starts with &ldquo;System.&rdquo; but not equal to
+&ldquo;System&rdquo;.</p>
+<pre tabindex="0"><code>using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using Roslyn.Compilers;
+using Roslyn.Compilers.CSharp;
+
+namespace RoslynDemo2
+{
+    class myWalker : SyntaxWalker   
+    {
+        public readonly List Usings = new List();
+
+        public override void VisitUsingDirective(UsingDirectiveSyntax node)
+        {
+            if (node.Name.GetText().ToString() != &#34;System&#34; &amp;&amp;
+                !node.Name.GetText().ToString().StartsWith(&#34;System.&#34;))
+            {
+                this.Usings.Add(node);
+            }
+        }
+    }
+}
+</code></pre><p>Now let&rsquo;s go back to the <em>Main</em> method and use our walker by adding the
+following code snippet to the end of Main method. Basically it passes
+the syntax tree root to <em>myWalker.Visit</em> method, which internally call
+the <em>VisitUsingDirective</em> method. Then we loop and print the collected
+usings.</p>
+<p>When you run your program, you should see an output similar to the
+following:</p>
+<p><img src="/img/0009.png" alt="alt text" title="Logo Title Text 1"></p>
+<p>In this post we gave a quick example about obtaining a SyntaxTree of
+HelloWorld program and explored its nodes. We also built a SyntaxWalker
+that walk the syntax tree and collect the nodes of our interest only.
+Later we will see how to fully manipulate SyntaxNodes and SyntaxTrees.</p>
+
+              <hr>
+              <div class="related-posts">
+                <h5>Related Posts</h5>
+                
+                  <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                      <h6 style="text-align: right">
+                        August 23, 2013
+                      </h6>
+                    </div>
+                    <div class="col-sm-8 col-md-8 col-lg-8">
+                      <h6 style="text-align: left">
+                        <strong><a href="/blog/2013-08-23-getting-started-with-microsoft-roslyn_9468.html/">Syntax Modification using Microsoft Roslyn</a></strong>
+                      </h6>
+                    </div>
+                  </div>
+                
+                  <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                      <h6 style="text-align: right">
+                        August 22, 2013
+                      </h6>
+                    </div>
+                    <div class="col-sm-8 col-md-8 col-lg-8">
+                      <h6 style="text-align: left">
+                        <strong><a href="/blog/2013-08-22-getting-started-with-microsoft-roslyn_22.html/">Semantic Analysis using Microsoft Roslyn</a></strong>
+                      </h6>
+                    </div>
+                  </div>
+                
+                  <div class="row">
+                    <div class="col-sm-4 col-md-4 col-lg-4">
+                      <h6 style="text-align: right">
+                        August 19, 2013
+                      </h6>
+                    </div>
+                    <div class="col-sm-8 col-md-8 col-lg-8">
+                      <h6 style="text-align: left">
+                        <strong><a href="/blog/2013-08-19-overview-of-microsoft-roslyn-first.html/">Overview of Microsoft Roslyn – The first compiler-as-service product</a></strong>
+                      </h6>
+                    </div>
+                  </div>
+                
+              </div>
+            </div>
+          </div>
+          <hr>
+        <div class="disqus">
+  <div id="disqus_thread"></div>
+  <script type="text/javascript">
+
+    (function() {
+      
+      
+      if (window.location.hostname == "localhost")
+        return;
+
+      var disqus_shortname = '';
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+  </script>
+  <noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+  <a href="http://disqus.com/" class="dsq-brlink">comments powered by <span class="logo-disqus">Disqus</span></a>
+</div>
+        </div>
+      </div>
+      
+    </div>
+
+    
+    <footer>
+  <div id="footer">
+    <div class="container">
+      <p class="text-muted">&copy; All rights reserved. Powered by <a href="https://gohugo.io/">Hugo</a> and
+      <a href="http://www.github.com/nurlansu/hugo-sustain/">sustain</a> with ♥</p>
+    </div>
+  </div>
+</footer>
+<div class="footer"></div>
+
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script src="http://localhost:1313/js/docs.min.js"></script>
+<script src="http://localhost:1313/js/main.js"></script>
+
+<script src="http://localhost:1313/js/ie10-viewport-bug-workaround.js"></script>
+
+
+    
+  </body>
+</html>
